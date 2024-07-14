@@ -21,6 +21,10 @@ pipeline {
             }
         }
 
+
+
+
+
         stage('Terraform Init') {
                     steps {
                        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-rwagh']]){
